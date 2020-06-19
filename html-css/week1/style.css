@@ -1,0 +1,37 @@
+
+.split {
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 10px;
+    }
+.left {
+    left: 10;
+    width:40%;
+    background-color: lightblue;
+  }
+  .right {
+    right: 0;
+    width: 60%;
+    background-color: snow;
+  }
+  
+  div {
+    width: 300px;
+    border: 10px;
+    padding: 50px;
+    margin: 20px;
+  }
+  
+  h1,h2,h4 {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  p {
+      text-align: justify;
+  }
+  a:hover{
+      background-color: steelblue;
+  }
+  
