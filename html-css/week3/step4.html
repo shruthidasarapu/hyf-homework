@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type= "text/css" href= "step4.css">
+    <title>Form5</title>
+</head>
+<body>
+    <header>
+    <div class="logo">
+        <span id="pic"> Logo</span>   
+        <nav id="nav"> Navigtion</nav> 
+           </div>
+</header>
+    <h1>Sign up to yourcustomtailor.com</h1>
+    
+<h2> Step 4/4 - Payment</h2>
+<form>
+    <label for = "file"> progress </label> <br>
+    <progress id= "file" value= "80" max= "100"> 80% </progress>
+    <p>Please fill in your payment data</p>
+    <div class="pay">
+        <div class="name">
+        <label for="name">Name on card</label>
+        <input type="text" id="name" name="name" required>
+        </div>
+        <div class="card">
+            <label for="card">Card type</label> 
+            <select id="card" name="card" >
+                <option value="visa">Visa</option>
+                <option value="Mastercard">Mastercard</option>
+                <option value="DK">DK</option>
+                
+              </select>  
+            </div>
+        <div class="digit">
+            <label for="creditcard">Credit card number</label>
+            <input type="text" id="creditcard" name="creditcard" maxlength="16" required> 
+            <label for="firstname">First name</label>
+            <input type="text" id="firstname" name="firstname" required>
+        </div>
+        <div class="num">
+            <label for="month">Expiry month</label>
+            <input type="text" id="month" name="month" required> 
+            <label for="year">Expiry year</label>
+            <input type="text" id="year" name="year" required>
+        </div>
+        <div class="num">
+            <label for="ccv">ccv</label>
+            <input type="text" id="ccv" name="ccv" maxlength="3" required> 
+           
+        </div>
+    </div>
+            <button id="step" type="nextstep">Next step</button>
+         
+</form>
+</body>
+</html>

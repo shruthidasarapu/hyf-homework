@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    margin:10px;
+    padding:0;
+}
+body {
+    margin:10px;
+    padding:70px;
+    border:1px solid gainsboro;
+    width:70%;
+   margin-left: 200px;
+   margin-right: 200px;
+   display: block; 
+}
+.logo {
+    display: flex;
+    justify-content: space-between;
+}
+#pic {
+    border: 1px solid gray;
+    padding-top: 40px;
+    text-align: center;
+    width:100px;
+    height:100px;
+    background-color: gray;
+    }
+    #nav {
+        border: 1px solid gray;
+        padding-top: 40px;
+        text-align: center;
+        width:200px;
+        height:100px;
+        background-color: gray;  
+    }
+    progress{
+        width:100%;
+       margin:10px;
+       border:1px solid black;
+       height:30px;
+       }
+       progress::-webkit-progress-value {    background-color: rgb(189, 181, 181) !important;}
+       progress::-webkit-progress-bar {    background-color: rgb(245, 240, 240) !important;}
+       input {
+        margin-left: 10px;
+        margin-top: 20px;
+        margin-right: 20px;
+        width:200px;
+        height:40px;
+        }
+        form select {
+            width:200px;
+            height:40px;   
+        }
+       button {
+           width:200px;
+           height: 50px;
+           float: right;
+           background-color: gainsboro;
+       }
+      .num input {
+          width:50px;
+      }

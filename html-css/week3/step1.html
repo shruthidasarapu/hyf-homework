@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type= "text/css" href= "step1.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="logo">
+        <span id="pic"> Logo</span>   
+        <nav id="nav"> Navigtion</nav> 
+           
+    </div>
+    
+    <h1>Sign up to yourcustomtailor.com</h1>
+    <p> We can't wait to help you improve your life-style and gain the attention from people around you!</p>
+    <p>Sign up below to save up to 70% on apparel, hand-bags and cosmetics. Our agents are busy picking the best offers that match your preferences and style. Every week we will send you a hand-picked selection - we just need to know a few details about your first...</p>
+<h2> Step 1/4 - tell us who you are?</h2>
+<form>
+    <div class="progress">
+    <label for = "file"> progress </label> <br>
+    <progress id= "file" value= "20" max= "100"> 20% </progress>
+</div>
+
+<p>Nice to meet you. Let's spend a minute to get to know each other? Please enter the following:</p>
+
+    
+    <div class="row1">
+    <div class="column1">
+    <label for="fname">First name*</label>
+    <input type="text" id="fname" name="fname" required>
+</div>
+<div class="column2">
+    <label for="lname">Last name*</label>
+    <input type="text" id="lname" name="lname" required>
+</div>
+</div>
+<div class="row2">
+    <label for="country">Country*</label> 
+    <select id="country" name="country" >
+        <option value="Danmark">Danmark</option>
+        <option value="India">India</option>
+        <option value="USA">USA</option>
+        <option value="Sweden">Sweden</option>
+      </select>  
+    </div>
+<div class="row3">
+    <div class="column1">
+    <label for="address">Street address*</label>
+    <input type="text" id="address" name="address" required>
+    </div>
+<div class="column2">
+    <label for="post">Post code*</label>
+    <input type="text" id="post" name="post" maxlength="4" required>
+</div>
+</div>
+<div class="row4">
+    <div class="profile">
+    <label for="profile">Profile description</label>
+    <p> please provide a short description of <br>  yourself to be displayed <br>on our social community pages.</p>
+</div>
+    <textarea id="profile" name= "profile" maxlength="500"></textarea> 
+    </div> 
+
+<p>Use the same address for billing and shipping?Uncheck below to fill out a seperate shipping address.</p>
+<div>
+    <label for="shipping">Shipping address</label>
+     <input type= "checkbox" id="shipping" name="shipping" value="shipping" checked>
+  
+  <div class="shippingaddress">
+    
+    <div class="row1">
+        <div class="column1">
+        <label for="firstname">First name*</label>
+        <input type="text" id="firstname" name="fname" required>
+    </div>
+    <div class="column2">
+        <label for="lastname">Last name*</label>
+        <input type="text" id="lastname" name="lname" required>
+    </div>
+    </div>
+    <div class="row2">
+        <label for="count">Country*</label> 
+        <select id="count" name="country" >
+            <option value="Danmark">Danmark</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="Sweden">Sweden</option>
+          </select>  
+        </div>
+    <div class="row3">
+        <div class="column1">
+        <label for="streetaddress">Street address*</label>
+        <input type="text" id="streetaddress" name="address" required>
+        </div>
+    <div class="column2">
+        <label for="postcode">Post code*</label>
+        <input type="text" id="postcode" name="post" maxlength="4" required>
+    </div>
+    </div> 
+  </div>
+</div>
+<div>
+    <button id="step" type="nextstep">
+        <a href= "step2.html">Next step</a>
+        
+    </button>
+    
+</div>
+
+</form>
+</body>
+</html>
