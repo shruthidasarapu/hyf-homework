@@ -6,3 +6,5 @@ Australia
 Sweden
 Norwegian
 Germany
+England
+Poland
