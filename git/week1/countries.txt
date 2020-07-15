@@ -4,3 +4,5 @@ USA
 France
 Australia
 Sweden
+Norwegian
+Germany
