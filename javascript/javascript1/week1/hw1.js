@@ -3,8 +3,8 @@
 const yearOfBirth = 1987;
 const yearOfFuture = 2027;
 const age = yearOfFuture - yearOfBirth;
- const output = ` you will be ${age} years old in ${yearOfFuture}`;
- console.log(output);
+const output = ` you will be ${age} years old in ${yearOfFuture}`;
+console.log(output);
 
 
 // A dog age calculator
@@ -12,10 +12,11 @@ const age = yearOfFuture - yearOfBirth;
  const dogYearOfBirth = 2017;
  const dogYearFuture = 2027;
  const dogYear = dogYearFuture - dogYearOfBirth;
- var shouldShowResultInDogYears; 
- if(shouldShowResultInDogYears == dogYear * 7)
+ let shouldShowResultInDogYears; 
+ if(shouldShowResultInDogYears == true)
  {
-     shouldShowResultInDogYears = `your dog will be ${shouldShowResultInDogYears} dog yeras old in ${dogYearFuture}`;   
+    dogYear *= 7;
+     shouldShowResultInDogYears = `your dog will be ${dogYear} dog yeras old in ${dogYearFuture}`;   
  }else {
     shouldShowResultInDogYears = `your dog will be ${dogYear} human yeras old in ${dogYearFuture}`;
     }
@@ -44,11 +45,10 @@ const age = yearOfFuture - yearOfBirth;
  
  // Startup name generator
 
- var firstWords = ["Donkey", "Zet" , "Lab", "Canopy", "Plan", "Cph", "App", "Anyfi", "Bat", "Appti"];
- var secondWords = ["Republic", "land", "ster","Lab","day", "containers", "flower","networks", "metrics","mate"];
- var startupName;
- for(let i=0; i<=9; i++)
- {
-    startupName = firstWords[i] + secondWords[i];
-    console.log("The startup: " + startupName + " contains " + startupName.length +" characters.");
- }
+ let firstWords = ["Donkey", "Zet" , "Lab", "Canopy", "Plan", "Cph", "App", "Anyfi", "Bat", "Appti"];
+ let secondWords = ["Republic", "land", "ster","Lab","day", "containers", "flower","networks", "metrics","mate"];
+ let startupName;
+ startupName = firstWords[Math.floor(Math.random()*firstWords.length)];
+ startupName += secondWords[Math.floor(Math.random()*secondWords.length)];
+ console.log("The startup: " + startupName + " contains " + startupName.length +" characters.");
+ 
