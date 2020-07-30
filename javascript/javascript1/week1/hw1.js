@@ -30,24 +30,25 @@ const age = yearOfFuture - yearOfBirth;
  let gardenSizeInM2 = [100 , 70];
  let housePrice = [volumeInMeters[0] * 2.5 * 1000 + gardenSizeInM2[0] * 300 , volumeInMeters[1] * 2.5 * 1000 + gardenSizeInM2[1] * 300];
  let houseCost = [2500000, 1000000];
- if(houseCost[0] <= housePrice[0])
+ if(houseCost[0] <= housePrice[0] && houseCost[1] <= housePrice[1])
  {
-    console.log("It is a good price");
- }else {
-    console.log("It is too much price");
+    console.log("Both houses are good price");
  }
- if(houseCost[1] <= housePrice[1])
- {
-    console.log("It is a good price");
- }else {
-
-    console.log("It is too much price");
+ else if(houseCost[0] <= housePrice[0] || houseCost[1] <= housePrice[1]) {
+    console.log("One of them is good price");
  }
+ else {
+  console.log("Both are too much price");
+ }
+ 
  
  // Startup name generator
 
  var firstWords = ["Donkey", "Zet" , "Lab", "Canopy", "Plan", "Cph", "App", "Anyfi", "Bat", "Appti"];
  var secondWords = ["Republic", "land", "ster","Lab","day", "containers", "flower","networks", "metrics","mate"];
- var startupName = firstWords[0] + secondWords[0];
- console.log("The startup: " + startupName + " contains " + startupName.length +" characters.");
- 
+ var startupName;
+ for(let i=0; i<=9; i++)
+ {
+    startupName = firstWords[i] + secondWords[i];
+    console.log("The startup: " + startupName + " contains " + startupName.length +" characters.");
+ }
