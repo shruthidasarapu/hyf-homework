@@ -3,3 +3,8 @@ India
 USA
 France
 Australia
+Sweden
+Norwegian
+Germany
+England
+Poland
