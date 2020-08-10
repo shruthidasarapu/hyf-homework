@@ -1,13 +1,11 @@
 // Flight booking fullname function
 
 function getFullname(firstname, surname){
-    /*firstname = 'Benjamin';
-    surname = 'Hughes';*/
-    return firstname + ' ' + surname;
+  return`${firstname} ${surname}`;
 }
-//console.log(getFullname());
-var fullname1 = getFullname('John' , 'Doe');
-var fullname2 = getFullname('Lina' , 'Doe');
+console.log(getFullname('Benjamin','Hughes'));
+let fullname1 = getFullname('John' , 'Doe');
+let fullname2 = getFullname('Lina' , 'Doe');
 console.log(fullname1);
 console.log(fullname2);
 
@@ -16,12 +14,12 @@ console.log(fullname2);
 
 function getFullname(firstname, surname, useFormalName){
    
-return     useFormalName=== true ? 'lord'+ ' ' +firstname +' '+ surname
-         : useFormalName=== false ? firstname +' ' + surname
-         :  undefined ;
-  }
-  
-      console.log(getFullname('john', 'doe',true));
+return     useFormalName ? `lord ${firstname}  ${surname}` : `${firstname}  ${surname}`;
+         
+}
+ console.log(getFullname('Lina', 'Doe',false));
+ 
+ console.log(getFullname('John', 'Doe',true));
 
 //Eventday
 const date = new Date();
@@ -47,8 +45,9 @@ function getEventWeekday(daysToEvent){
       return 'rainy clothes';
     }
   }
-  var clothesToWear = weatherForeCast();
+  let clothesToWear = weatherForeCast();
   console.log(clothesToWear);
+
   // student names
   const class07Students = [];
   function addStudentToClass(studentName) {
