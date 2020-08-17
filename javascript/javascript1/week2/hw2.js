@@ -21,6 +21,16 @@ return     useFormalName ? `lord ${firstname}  ${surname}` : `${firstname}  ${su
  
  console.log(getFullname('John', 'Doe',true));
 
+// Single function for both flight booking and formal name
+function getFullName(firstName, surName, useFormalName){
+if(useFormalName == true)
+{
+  return  `lord ${firstName}  ${surName}` ;
+} else {
+  return  `${firstName}  ${surName}`;
+}
+}
+console.log(getFullName('John' ,'Doe' ,true);
 //Eventday
 const date = new Date();
 const day = date.getDay();
@@ -63,7 +73,7 @@ function getEventWeekday(daysToEvent){
           }
       class07Students.push(studentName);
     }  
-  if(class07Students.length >= 6 && studentName !== 'Queen' )
+  else if(class07Students.length >= 6 && studentName !== 'Queen' )
     {
       return "class is full" ;
     }
