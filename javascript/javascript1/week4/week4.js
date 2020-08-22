@@ -6,7 +6,7 @@ function getReply(command)
   const num1 =  Number(arrayOfStrings[2]);
   const num2 =  Number(arrayOfStrings[4]); 
   switch(command){
-    case 'hello my name is benjamin':
+    case 'hello my name is Benjamin':
       name = command.substring(17);
       return`nice to meet you ${name}`;
       break;
@@ -91,7 +91,7 @@ function getReply(command)
 console.log(getReply('what is math(a,b)')); 
   
 
-console.log(getReply('hello my name is'));
+console.log(getReply('hello my name is Benjamin'));
 console.log(getReply('what is my name'));
 console.log(getReply('add fishing to my todo'));
 console.log(getReply('add singing in shower to my todo'));
