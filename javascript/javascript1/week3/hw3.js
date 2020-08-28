@@ -12,7 +12,6 @@ for(let i = 0; i < names.length; i++)  // UNKNOWN INDEX USE FOR LOOP
 }
 
 console.log(names); // ['Peter', 'Yana', 'kristina', 'Rasmus', 'Samuel', 'katrine', 'Tala']
-//........................................................//
 // Traveltime
 
 const travelInformation = {
