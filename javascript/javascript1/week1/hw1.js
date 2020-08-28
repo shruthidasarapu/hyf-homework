@@ -12,7 +12,7 @@ console.log(output);
  const dogYearOfBirth = 2017;
  const dogYearFuture = 2027;
  const dogYear = dogYearFuture - dogYearOfBirth;
- let shouldShowResultInDogYears; 
+ let shouldShowResultInDogYears = false; 
  if(shouldShowResultInDogYears == true)
  {
     dogYear *= 7;
@@ -45,8 +45,8 @@ console.log(output);
  
  // Startup name generator
 
- let firstWords = ["Donkey", "Zet" , "Lab", "Canopy", "Plan", "Cph", "App", "Anyfi", "Bat", "Appti"];
- let secondWords = ["Republic", "land", "ster","Lab","day", "containers", "flower","networks", "metrics","mate"];
+ const firstWords = ["Donkey", "Zet" , "Lab", "Canopy", "Plan", "Cph", "App", "Anyfi", "Bat", "Appti"];
+ const secondWords = ["Republic", "land", "ster","Lab","day", "containers", "flower","networks", "metrics","mate"];
  let startupName;
  startupName = firstWords[Math.floor(Math.random()*firstWords.length)];
  startupName += secondWords[Math.floor(Math.random()*secondWords.length)];
