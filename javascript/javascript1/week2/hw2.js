@@ -8,8 +8,6 @@ let fullname1 = getFullname('John' , 'Doe');
 let fullname2 = getFullname('Lina' , 'Doe');
 console.log(fullname1);
 console.log(fullname2);
-
-
 //Formal fullname
 
 function getFullname(firstname, surname, useFormalName){

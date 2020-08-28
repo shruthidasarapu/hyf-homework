@@ -1,18 +1,17 @@
 // Item array removal
 const names = ['Peter', 'Ahmad', 'Yana', 'kristina', 'Rasmus', 'Samuel', 'katrine', 'Tala'];
 const nameToRemove = 'Ahmad';
-names.splice(1,1);  // Remove the item using index value directly
+//names.splice(1,1);  // Remove the item using index value directly
 
 for(let i = 0; i < names.length; i++)  // UNKNOWN INDEX USE FOR LOOP
 {
   if(names[i] == nameToRemove){
     names.splice(i, 1);
-    break;
+    
   }
 }
-console.log(names);
+
 console.log(names); // ['Peter', 'Yana', 'kristina', 'Rasmus', 'Samuel', 'katrine', 'Tala']
-//........................................................//
 // Traveltime
 
 const travelInformation = {
@@ -23,7 +22,7 @@ function totalTime(travelInformation){
    let time = travelInformation.destinationDistance/travelInformation.speed;
   let  hours = Math.floor(time);
   let minutes = Math.floor((time - hours)* 60);
-  return hours + ' hours '+ ' and ' + minutes + ' minutes ';
+  return `${hours}  hours  and  ${minutes}  minutes` ;
 }
 const travelTime = totalTime(travelInformation);
 console.log(travelTime);
