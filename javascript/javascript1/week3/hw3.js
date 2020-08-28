@@ -1,7 +1,7 @@
 // Item array removal
 const names = ['Peter', 'Ahmad', 'Yana', 'kristina', 'Rasmus', 'Samuel', 'katrine', 'Tala'];
 const nameToRemove = 'Ahmad';
-names.splice(1,1);  // Remove the item using index value directly
+//names.splice(1,1);  // Remove the item using index value directly
 
 for(let i = 0; i < names.length; i++)  // UNKNOWN INDEX USE FOR LOOP
 {
