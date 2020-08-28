@@ -68,7 +68,7 @@ function getReply(command)
  }
 }
 
-    //..... arithematic operations for random numbers............//
+    // arithematic operations for random numbers............//
   function math(operator){
      let a = Math.floor((Math.random() * 10) + 1);
      let b = Math.floor((Math.random() * 10) + 1);
