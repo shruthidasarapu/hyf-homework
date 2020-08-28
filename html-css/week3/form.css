@@ -1,0 +1,231 @@
+/*............step1 form...................*/
+* {
+    box-sizing: border-box;
+}
+body {
+    margin:10px;
+    padding:80px;
+    border:1px solid gainsboro;
+    width:70%;
+   margin-left: 200px;
+   margin-right: 200px;
+   
+}
+.logo {
+    display: flex;
+    justify-content: space-between;
+}
+#pic {
+    border: 1px solid grey;
+    padding-top: 40px;
+    text-align: center;
+    width:100px;
+    height:100px;
+    background-color: gray;
+    }
+    #nav {
+        border: 1px solid grey;
+        padding-top: 40px;
+        text-align: center;
+        width:200px;
+        height:100px;
+        background-color:gray;  
+    }
+.row1,.row3 {
+    display: flex;
+    justify-content: space-between;
+   
+}
+form textarea {
+    margin-left: 10px;
+    width:50%;
+    margin-top: 20px;
+}
+.profile {
+    display:flex;
+flex-direction: column;
+margin-top: 20px;
+}
+.row4 {
+    display:flex;
+}
+input[type= text] {
+    margin-left: 10px;
+    margin-top: 20px;
+    width:300px;
+    height:40px;
+    }
+    .row2 select {
+        margin-left: 30px;
+        margin-top: 20px;
+        width:30%;
+        height: 40px;
+    }
+    form label {
+        margin-right: 20px;
+        font-weight: bold;
+    }
+     progress{
+         width:100%;
+        margin:10px;
+        border:1px solid black;
+        height:30px;
+        }
+        progress::-webkit-progress-value {    background-color: rgb(189, 181, 181) !important;}
+        progress::-webkit-progress-bar {    background-color: rgb(245, 240, 240) !important;}
+        button {
+            width:200px;
+            height: 50px;
+            float: right;
+            background-color: gainsboro;
+            margin:20px;
+        }
+        a {
+            text-decoration: none;
+        }
+        .shippingaddress {
+            display: block;
+        }
+        #shipping:checked ~ .shippingaddress {
+            position: absolute;
+            display: none;
+        }
+
+        /*..............media queries for step1....................*/
+        @media screen and (max-width: 700px) {
+            * {
+                box-sizing: border-box;
+                margin: 10px;
+                padding: 0;
+            
+            }
+            body{
+                border: 0;
+                display: inline;
+            }
+            .logo {
+                display:flex;
+                }
+            h1 {
+                 font-size: 30px;
+             }
+            form {
+                display: block;
+
+            }
+            .row1, .row3 {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        /*....................step2 form......................*/
+        .info input[type=text] {
+            margin:10px;
+            padding:10px;
+        }
+        .news{
+         display: inline-block;
+         position: relative;
+         top:0;
+         left:0;
+         padding: 30px;
+         user-select: none;
+     
+     }
+     input[type=radio]{
+         display: none;
+     }
+     .news .square{
+         display: inline-block;
+         width: 30px;
+         height: 30px;
+         position: absolute;
+         border: 2px solid rgb(180, 175, 175);
+     }
+     .news:hover .square{
+         background-color: rgb(95, 95, 114);
+     }
+     .news input[type=radio]:checked+ .square{
+         background-color: white;
+     }
+     .news input[type=radio]:checked+ .square:after{
+         content: '';
+         height: 15px;
+         width: 15px;
+         position: absolute;
+         border-radius: 50%;
+         border: 1px solid grey;
+         background-color: rgb(83, 81, 81);
+         left: 50%;
+         top: 50%;
+         transform: translate(-50%,-50%);
+     }
+     /*...........media queries for step2.............*/
+     @media screen and (max-width: 700px) {
+         
+         input[type=text] {
+             width:100%;
+         }
+         .radio {
+             display:flex;
+             flex-direction: column;
+         }
+     }
+     /*...............step3 form......................*/
+     .images {
+        list-style: none;
+        margin:0;
+        padding:0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr;
+        grid-row-gap: 30px;
+    }
+    img {
+        width:200px;
+        height:200px;
+    }
+    .item  {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 50%;
+        
+    }
+    .item label {
+        display:block;
+        margin:20px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    input[type=checkbox] {
+        width:20px;
+        height:20px;
+    }
+    /*............media queries for step3................*/
+    @media screen and (max-width: 700px) {
+    .images{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+}
+/*.................step4 form.....................*/
+* {
+    margin: 10px;
+    padding: 0;
+}
+form select {
+    width:200px;
+    height:40px;   
+}
+.num input {
+    width:50px;
+}
+/*..............media queries for step4........................*/
+@media screen and (max-width: 700px) {
+ .num input[type=text] {
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+ }
+}    

@@ -1,13 +1,11 @@
 // Flight booking fullname function
 
 function getFullname(firstname, surname){
-    /*firstname = 'Benjamin';
-    surname = 'Hughes';*/
-    return firstname + ' ' + surname;
+  return`${firstname} ${surname}`;
 }
-//console.log(getFullname());
-var fullname1 = getFullname('John' , 'Doe');
-var fullname2 = getFullname('Lina' , 'Doe');
+console.log(getFullname('Benjamin','Hughes'));
+let fullname1 = getFullname('John' , 'Doe');
+let fullname2 = getFullname('Lina' , 'Doe');
 console.log(fullname1);
 console.log(fullname2);
 
@@ -16,13 +14,23 @@ console.log(fullname2);
 
 function getFullname(firstname, surname, useFormalName){
    
-return     useFormalName=== true ? 'lord'+ ' ' +firstname +' '+ surname
-         : useFormalName=== false ? firstname +' ' + surname
-         :  undefined ;
-  }
-  
-      console.log(getFullname('john', 'doe',true));
+return     useFormalName ? `lord ${firstname}  ${surname}` : `${firstname}  ${surname}`;
+         
+}
+ console.log(getFullname('Lina', 'Doe',false));
+ 
+ console.log(getFullname('John', 'Doe',true));
 
+// Single function for both flight booking and formal name
+function getFullName(firstName, surName, useFormalName){
+if(useFormalName == true)
+{
+  return  `lord ${firstName}  ${surName}` ;
+} else {
+  return  `${firstName}  ${surName}`;
+}
+}
+console.log(getFullName('John' ,'Doe' ,true);
 //Eventday
 const date = new Date();
 const day = date.getDay();
@@ -47,8 +55,9 @@ function getEventWeekday(daysToEvent){
       return 'rainy clothes';
     }
   }
-  var clothesToWear = weatherForeCast();
+  let clothesToWear = weatherForeCast();
   console.log(clothesToWear);
+
   // student names
   const class07Students = [];
   function addStudentToClass(studentName) {
@@ -64,7 +73,7 @@ function getEventWeekday(daysToEvent){
           }
       class07Students.push(studentName);
     }  
-  if(class07Students.length >= 6 && studentName !== 'Queen' )
+  else if(class07Students.length >= 6 && studentName !== 'Queen' )
     {
       return "class is full" ;
     }
