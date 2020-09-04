@@ -29,7 +29,7 @@ li.appendChild(h1);
 ul.appendChild(li);
 
 
-if(podcasts[i].imageUrl !== undefined)
+if(podcasts[i].imageUrl)
 {
     
 let image = document.createElement('image');
