@@ -18,14 +18,14 @@ console.log(longMovies);
         tag = "average";
     }
      else if(movieRating < 4){
-        tag = "badss";
+        tag = "bad";
     }
      let goodMovieRating = movies.filter(movie => movie.rating > 6).map(movie => movie.rating);
      console.log(goodMovieRating);
      let movieTitle = movies.map(movie => movie.title);
      console.log(movieTitle);
-     let array = movieTitle.filter(movie => movie.includes('Surfer')|| movie.includes('Alien') || movie.includes(  'Benjamin'));
-     console.log(array.length);
+     let array = movieTitle.filter(movie => movie.includes('Surfer')|| movie.includes('Alien') || movie.includes('Benjamin'));
+     console.log(array);
      let duplicateWords = new RegExp(/\b(\w+)\b.*\b\1\b/);
      let duplicateWordMovies = movies.filter((movie) => movie.title.match(duplicateWords));
      console.log(duplicateWordMovies);
