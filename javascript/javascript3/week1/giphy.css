@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+#btn {
+    background-color: rgb(128, 206, 10);
+    margin-left: 30px;
+}
