@@ -6,29 +6,34 @@ const weatherOfCity = () => {
 fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName.value}&appid=5fe4018a92c508bb531be713911b9df3`)
 .then(response => response.json())
 .then(data => {console.log(data)
-
+// name of the city
 const h1 = document.getElementById('city')
 h1.innerHTML = ` City name : ${data.name}`
 body.appendChild(h1)
+// temperature
 const h2 = document.getElementById('temp')
 h2.innerHTML = ` Temperature : ${Math.round(data.main.temp-273.15)} celsius`
 body.appendChild(h2)
+//weather icon
  const weatherIcon = `http://openweathermap.org/img/w/${data.weather[0].icon}.png`
  const img = document.getElementById("image")
  img.src = weatherIcon
  body.appendChild(img)
+ //wind speed
  const windSpeed = document.getElementById("wind")
  windSpeed.innerHTML = ` Wind speed : ${data.wind.speed}`
  body.appendChild(windSpeed)
+ // cloudy
  const description = document.getElementById("cloudy")
  description.innerHTML = `  How clowdy it is : ${data.weather[0].description}`
  body.appendChild(description)
+ // sunrise
  let unix = `${data.sys.sunrise}`
 let sunrise = new Date(unix*1000)
 const sunRise = document.getElementById("rise")
 sunRise.innerHTML = "sunrise : " + sunrise.toLocaleTimeString()
 body.appendChild(sunRise)
-  
+ //sunset 
 let unit = `${data.sys.sunset}`
 let sunset = new Date(unit*1000)
 const sunSet = document.getElementById("set")

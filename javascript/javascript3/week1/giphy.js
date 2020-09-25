@@ -8,7 +8,7 @@ const giphy = () => {
         const img = document.createElement('img')
            img.src = element.images.fixed_width.url
             
-           const div = document.getElementById('pic')
+           const div = document.getElementById('container')
           
             div.appendChild(img) 
            });
