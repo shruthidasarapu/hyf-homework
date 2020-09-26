@@ -1,0 +1,25 @@
+
+[
+    {
+         "name"  : "music1" ,
+        "artist": "Brett Kissel",
+        "album" :"Now or Never",
+        "genre":  "Country",
+        "label" : "Warner music Canada"
+    },
+    {
+         "name"  : "music2" , 
+        "artist": "Stabbling Westward",
+        "album" :"Dead and Gone",
+        "genre":  "Industrial Rock",
+        "label" : "Drug Store Records"  
+    },
+    {
+         "name"  : "music3", 
+        "artist": "Poppy",
+        "album" :"I disagree",
+        "genre":  ["Heavy Metal","Pop","Elcro Pop"],
+        "label" : "Sumerian"  
+    }
+
+]
