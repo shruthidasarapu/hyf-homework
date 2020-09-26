@@ -2,7 +2,7 @@ setTimeout(function(){
     console.log("called after 2.5 seconds"); 
 }, 2500);
 /--------------------------------------------/
-function abstract(delay, stringToLog) 
+function displayString(delay, stringToLog) 
 { 
  delay *= 1000;
  setTimeout(() => {
@@ -10,12 +10,12 @@ function abstract(delay, stringToLog)
  }, delay);
  
 } 
-abstract(5, "the string loaded after 5 seconds");
-abstract(3, "the string loaded after 3 seconds");
+displayString(5, "the string loaded after 5 seconds");
+displayString(3, "the string loaded after 3 seconds");
 /-----------------------------------------------------/
 const button = document.getElementById('timer');
 function runAfterDelay  () { 
-    abstract(5,"called after 5 seconds");
+    displayString(5,"called after 5 seconds");
 };
 button.addEventListener('click',runAfterDelay);
 
@@ -94,9 +94,9 @@ function logBadJoke(){
 jokeCreator(true);
 jokeCreator(false);
 /---------------------------------------------/
-const array = [fun1(),fun2(),fun3()];
-for (let i = 0; i < array.length; i++) {
-    array[i];
+const arrayFunction = [fun1(),fun2(),fun3()];
+for (let i = 0; i < arrayFunction.length; i++) {
+    arrayFunction[i];
 }
 function fun1(){
     console.log("this is function1")

@@ -4,11 +4,11 @@ const p = document.querySelector('p')
 const countS = document.getElementById('textS');
 const countL = document.getElementById('textL');
 
-    let count1 = 0;
-    let count2 = 0;
+    const count1 = 0;
+    const count2 = 0;
 
- let game = (e) =>{ 
-    let key = e.key;
+ const game = (e) =>{ 
+    const key = e.key;
     
     if(key === 's')
     {
@@ -36,6 +36,6 @@ if(count1 > count2){
 }
 
 button.addEventListener('click', (e) => { 
-let amountOfTime = document.getElementById('time').value;
+const amountOfTime = document.getElementById('time').value;
 timer(amountOfTime);
 });
