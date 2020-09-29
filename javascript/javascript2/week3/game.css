@@ -1,0 +1,33 @@
+.game {
+    display: flex;
+    column-gap: 40px;
+    border-top: 1px solid black;
+}
+body {
+    margin: 0;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+button {
+    background-color: rgb(128, 206, 10);
+    margin-left: 30px;
+}
+.key {
+    border-right: 1px solid black;
+    
+}
+h1 {
+    font-style: oblique;
+}
+#textS {
+    background-color: rgb(146, 192, 233);
+}
+    
+#textL {
+    background-color: rgb(25, 236, 236);
+    
+}
+    
