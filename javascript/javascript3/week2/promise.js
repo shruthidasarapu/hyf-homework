@@ -7,12 +7,13 @@ function logPromise (resolveAfter) {
     })
     
     .then(() => console.log("logged after 2 seconds"))
+    return promise;
     }
-    logPromise (2);
+    logPromise(2);
 
     // async-await function
     
-        const logPromise = new Promise( resolve =>{
+        const delayPromise = new Promise( resolve =>{
             setTimeout(() => {
                 resolve("logged after 8 seconds")
             },8000 );
@@ -20,13 +21,13 @@ function logPromise (resolveAfter) {
         })
         
     async function getLogPromise(){
-        const result = await logPromise;
+        const result = await delayPromise;
         console.log(result);
     }
     getLogPromise();
      
 // set timeout
-const logPromise = new Promise( resolve =>{
+const promiseAfterDelay = new Promise( resolve =>{
     setTimeout(resolve , 3000) 
 })   
     
@@ -41,7 +42,7 @@ navigator.geolocation.getCurrentPosition((position) => {
 
 // fetching and waiting
 
-const logPromise = new Promise( resolve =>{
+const loggedPromise = new Promise( resolve =>{
     setTimeout(resolve, 3000)
     
 }) 
@@ -54,7 +55,7 @@ const logPromise = new Promise( resolve =>{
 
 async function getPromise(){
     try { 
-     const astros =   await logPromise
+     const astros =   await loggedPromise
      const response = await  fetch("http://api.open-notify.org/astros.json")
      const data = await response.json()
      console.log(data)

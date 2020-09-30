@@ -6,14 +6,13 @@
         const promise2 =  moveElement(document.querySelector('li:nth-child(2)'), {x: 400, y: 300})
         
         const promise3 =   moveElement(document.querySelector('li:nth-child(3)'), {x: 400, y: 20})
-        
-        return(promise1,promise2,promise3)
-        
         .then(() => {
             console.log('Element has been moved');
-        })
-     }
-     translateAllAtOnce()
+        }) 
+        return Promise.all[(promise1,promise2,promise3)]
+        }
+     translateAllAtOnce();
+     
       // one by one 
      function translateOneByOne(){
         const promise1 = new Promise( resolve => {
@@ -34,6 +33,6 @@
                  .then(() => {
                      console.log(' Green element has been moved');
                  }) 
-                  
+               return Promise.all[(promise1,promise2,promise3)]   
      }
-     translateOneByOne()
+     translateOneByOne();

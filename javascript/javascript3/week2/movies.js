@@ -4,7 +4,7 @@ const response =  await fetch('https://gist.githubusercontent.com/pankaj28843/08
 const arrayOfMovies  =  await  response.json();
 const badMovies = arrayOfMovies.filter((movie) => (movie.rating < 5));
  console.log(badMovies);  
-const badMovies2000 = badMovies.filter((movies) => movies.year >= 2000);
+const badMovies2000 = badMovies.filter((movie) => movie.year >= 2000);
  console.log(badMovies2000);
     }
     catch(error) {
