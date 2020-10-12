@@ -4,14 +4,7 @@ const canvas = document.getElementById('circle');
       canvas.width = window_width;
       canvas.height = window_height;
       const ctx = canvas.getContext('2d');
-      function getRandomColor() {
-          const letters = '0123456789ABCDEF'
-          let color = '#';
-          for(let i = 0; i < 6 ; i++){
-              color += letters[Math.floor(Math.random()*16)];
-          }
-          return color;
-      }
+      
       class Circle {
           constructor(x, y, r, startAngle, endAngle, fillColor){
               this.x = x;
@@ -25,7 +18,7 @@ const canvas = document.getElementById('circle');
         
             ctx.beginPath();
             ctx.arc(this.x, this.y, this.r, this.startAngle, this.endAngle, this.fillColor);
-            ctx.fillStyle = getRandomColor();
+            ctx.fillStyle = '#' + parseInt(Math.random() * 0xffffff).toString(16)
             ctx.fill();
             ctx.stroke();   
             
