@@ -44,7 +44,7 @@
     FROM   status 
          JOIN task 
            ON status.id = task.status_id 
-    GROUP  BY status.name; 
+    GROUP  BY status.id; 
   
 // The names of all statuses, sorted by the status with most tasks first
   
@@ -54,6 +54,6 @@
     FROM   status 
          JOIN task 
            ON status.id = task.status_id 
-    GROUP  BY status.name 
+    GROUP  BY status.id 
     ORDER  BY count DESC; 
   
