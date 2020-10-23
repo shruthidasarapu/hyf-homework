@@ -26,7 +26,7 @@
       LIMIT 1 ;
        
 //  The title and due date of all tasks where the title or description contains database
-      SELECT title, description
+      SELECT title, due_date
        FROM task
       Where title LIKE '%database%' 
       OR 
@@ -43,7 +43,7 @@
          name 
     FROM   status 
          JOIN task 
-           ON status.id = task.status_id 
+           ON  task.status_id = status.id 
     GROUP  BY status.id; 
   
 // The names of all statuses, sorted by the status with most tasks first
@@ -53,7 +53,7 @@
          name 
     FROM   status 
          JOIN task 
-           ON status.id = task.status_id 
+           ON  task.status_id = status.id 
     GROUP  BY status.id 
     ORDER  BY count DESC; 
   
