@@ -43,7 +43,8 @@ CREATE TABLE `review` (
  insert into  meal(id, title, description, location, `when`, max_reservations, price, created_date) values(4, 'burger', 'chicken', 'lyngby', '2020-05-06 11:10:12' ,'5','120','2020-05-06');
  insert into  meal(id, title, description, location, `when`, max_reservations, price, created_date) values(5, 'sandwitch', 'chicken', 'bagsværd', '2020-10-05 10:02:15', '3', '80', '2020-10-05'); 
  insert into  meal(id, title, description, location, `when`, max_reservations, price, created_date) values(6, 'rød grød med flød', 'egg', 'buddinge','2020-08-12 12:05:10' , '2' ,'50', '2020-08-12');
- 
+ insert into  meal(id, title, description, location, `when`, max_reservations, price, created_date) values(7,'brød rød grød med flød','chicken','søborg','2020-08-10 09:05:10','4','120','2020-08-10');
+ insert into  meal(id, title, description, location, `when`, max_reservations, price, created_date) values(8,'pasta','salad','bagsværd','2020-02-12 12:05:10','3','150','2020-02-12');
  SELECT * FROM meal
  WHERE id=1;
 
@@ -60,7 +61,9 @@ CREATE TABLE `review` (
  insert into  reservation(id, number_of_guests, meal_id, created_date, contact_phonenumber, contact_name, contact_email) values(1, '4','1','2020-10-20', '12345678','alexander','abc@mail.com');
  insert into  reservation(id, number_of_guests, meal_id, created_date, contact_phonenumber, contact_name, contact_email) values(2, '6','1','2020-10-20', '12312345','mikell','xyz@mail.com');
  insert into  reservation(id, number_of_guests, meal_id, created_date, contact_phonenumber, contact_name, contact_email) values(3,'4', '1', '2020-10-21','32456178', 'catherine' ,'svd@mail.com');
-  
+ insert into  reservation(id, number_of_guests, meal_id, created_date, contact_phonenumber, contact_name, contact_email) values(4,'3', '1', '2020-10-22','32456179', 'katherine' ,'asvd@mail.com');
+ insert into  reservation(id, number_of_guests, meal_id, created_date, contact_phonenumber, contact_name, contact_email) values(5,'2', '1', '2020-10-23','32456177', 'camila' ,'ksvd@mail.com');
+   
   SELECT * FROM reservation
   WHERE id=1;
 
@@ -75,7 +78,8 @@ CREATE TABLE `review` (
  insert into  review(id, title, description, meal_id,  stars, created_date) values(1,'pizza', 'good', 1, '4', '2020-10-20'); 
  insert into  review(id, title, description, meal_id,  stars, created_date) values(2,'pasta', ' not good', 1, '1', '2020-10-20');
  insert into  review(id, title, description, meal_id,  stars, created_date) values(3,'sandwitch', ' yummy', 1 , '5', '2020-10-21');
- 
+ insert into  review(id, title, description, meal_id,  stars, created_date) values(4,'noodles', 'ok', 1 , '3', '2020-10-21');
+ insert into  review(id, title, description, meal_id,  stars, created_date) values(5,'pitabrød', 'not bad', 1 , '2', '2020-10-21');
  SELECT * FROM review
  WHERE id =1;
 
@@ -100,7 +104,7 @@ CREATE TABLE `review` (
 
  -- Get meals that partially match a title. Rød grød med will match the meal with the title Rød grød med fløde
  SELECT * FROM meal
- WHERE title LIKE 'rød grød med%';
+ WHERE title LIKE '%rød grød med%';
 
 --  Get meals that has been created between two dates
 SELECT * FROM meal
