@@ -1,0 +1,26 @@
+[
+    {
+        "id" : 1,
+        "title" : "Indian food in the summer",
+        "maxNumberOfGuests" : 5,
+        "description" : "A nice night out eating delicious indian food",
+        "createdAt" : "2019/12/7 14:34",
+        "price" : 67
+    },
+    {
+        "id" : 2,
+        "title" : "Spaghetti",
+        "maxNumberOfGuests" : 4,
+        "description" : "Children favourite food",
+        "createdAt" : "2019/12/9 16:34",
+        "price" : 120  
+    },
+    {
+    "id" : 3,
+    "title" : "Chicken pizza",
+    "maxNumberOfGuests" : 3,
+    "description" : "A delicious food in weekend",
+    "createdAt" : "2019/12/10 18:20",
+    "price" : 100
+    }
+]
