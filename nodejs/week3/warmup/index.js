@@ -62,7 +62,7 @@ app.get("/calculator/multiply", (req, res) => {
     res.send(multiplication)
     });
 
-    app.post("/calculator/multiply", (req, res) => { 
+    app.post("/calculator/multiplication", (req, res) => { 
       const firstNumber =(req.body.first);
       const secondNumber =(req.body.second);
       const multiplication = `${firstNumber * secondNumber}`;
