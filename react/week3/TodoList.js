@@ -7,7 +7,12 @@ export function TodoList(props){
   console.log(item);
   function addTodo(){
     props.setSubscribedState((prev) => {
-      return [...prev,{description:item, deadline:startDate}]
+      return [...prev,{
+        description:item, 
+        deadline:startDate,
+        onEdit: false,
+        onCheck: false
+      }]
     })
   }
 
