@@ -3,3 +3,5 @@ beetroots
 red tomatoes
 brocolli
 cauliflower
+capsicum
+beans
