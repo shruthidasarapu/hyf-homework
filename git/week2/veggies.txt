@@ -1,5 +1,7 @@
 carrots
 beetroots
-tomatoes
+red tomatoes
 brocolli
 cauliflower
+capsicum
+beans
