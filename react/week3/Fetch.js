@@ -18,8 +18,6 @@ export function FetchApi() {
   }
   const editTodo =(index)=>{
     const list = [...subscribedState];
-    console.log(list)
-    console.log(index)
     list[index].onEdit = !list[index].onEdit;
     setSubscribedState(list)
   }
