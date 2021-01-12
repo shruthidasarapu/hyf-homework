@@ -35,7 +35,7 @@ let todos = [
       }
       
     ]})
-      console.log(state);
+      
      }
   const deleteTodo = (index) => {
      setState(todos.splice(index,1))
